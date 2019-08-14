@@ -101,7 +101,13 @@ class ConvertExperiments_ConvertExperiments_Block_ReedScripts extends Mage_Core_
                 $attributeSetModel = Mage::getModel("eav/entity_attribute_set");
                 $attributeSetModel->load($product->getAttributeSetId());
                 $attributeSetName  = $this->_editString($attributeSetModel->getAttributeSetName());
-                $productPrice = round($product->getMinimalPrice(),2);
+
+                if($product->_data["special_price"]) {
+                    $productPrice = round($product->_data["special_price"],2);
+                } else {
+                    $productPrice = round($product->_data["price"],2);
+                }
+                
                 if($productType == "grouped") {
                     $aProductIds = $product->getTypeInstance()->getChildrenIds($product->getId());
                     $prices = array();
