@@ -10,5 +10,7 @@
 ?>
 <?php $helper = Mage::helper('convert_experiments/data') ?>
 <?php if($helper->isEnabled() == 1): ?>
-<?php echo $helper->getConvertProjectCode() ?>
+<!-- begin Convert Experiments code-->
+<script type="text/javascript" src="//cdn-3.convertexperiments.com/js/<?php echo str_replace("_", "-", $helper->getConvertProjectCode()) ?>.js"></script>
+<!-- end Convert Experiments code -->
 <?php endif; ?>

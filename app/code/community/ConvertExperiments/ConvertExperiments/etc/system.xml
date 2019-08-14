@@ -41,7 +41,7 @@
                         </enabled>
                         <convert_experiments_project_code translate="label">
                             <label>Convert.com Project Code</label>
-                            <frontend_type>textarea</frontend_type>
+                            <frontend_type>text</frontend_type>
                             <sort_order>20</sort_order>
                             <comment><![CDATA[Your Project Code is located on the Project Settings page in your <a href="https://www.convertexperiments.com/login" target="_blank">Convert Experiments Account</a>.]]></comment>
                             <show_in_default>1</show_in_default>
