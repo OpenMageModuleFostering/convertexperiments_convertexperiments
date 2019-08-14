@@ -1,0 +1,25 @@
+<?php
+/**
+ * Outputs the customer ID on every page. If a customer is not logged in, the
+ * variable will be defined as "NOT LOGGED IN". If a customer is logged in, the
+ * variable will be their specific customer group code.
+ *
+ * After defining the customer id, the Convert.com REED variables are then
+ * printed within the same script tags.
+ *
+ * @package ConvertExperiments
+ * @subpackage ConvertExperiments
+ * @version 1.0.5
+ * @author Robert Henderson
+ */
+
+$helper = Mage::helper('convert_experiments/data');
+
+if($helper->isEnabled() == 1) {
+    $groupId = Mage::getSingleton('customer/session')->getCustomerGroupId();
+    $group = Mage::getModel('customer/group')->load($groupId);
+    $groupName = $group->getCode();
+    $variables = "\t" . 'var REED_customer_id = "' . $groupName . '"; ' . "\n";
+    $variables .= "\t" . 'var REED_plugin_ID = "101"; ' . "\n";
+    echo $this->wrapReedVariables($variables);
+}

@@ -1,0 +1,27 @@
+1.0.0
+Initial development of module. Added system configuration and definitions of
+REED Javascript variables on product, category, and CMS pages.
+
+1.0.1
+Fixed duplication error message that was always showing up on default scope, and
+removed module from Blue Acorn tab and put under General tab.
+
+1.0.2
+Increased PHP version compatibility to 5.3.15
+
+1.0.3
+Moved Convert scripts output to the head block.
+
+1.0.4
+Packaging Extension for EE on Magento Connect
+
+1.0.5
+Removing text from numeric string variables and adding REED_page_type to
+product pages.
+
+1.0.6
+Bug fixes
+
+1.0.7
+Increased PHP version compatibility to 5.4.13 despite Magento system requirements
+only supporting up to 5.3.15 to accommodate those running higher versions on PHP

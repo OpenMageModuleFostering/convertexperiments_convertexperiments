@@ -1,0 +1,6 @@
+tar -czvf
+ConvertExperiments_ConvertExperiments-1.0.7.tar.gz
+app/code/community/ConvertExperiments/ConvertExperiments
+app/etc/modules/ConvertExperiments_ConvertExperiments.xml
+app/design/frontend/base/default/layout/convertexperiments/convertexperiments.xml
+app/design/frontend/base/default/template/convertexperiments/convertexperiments

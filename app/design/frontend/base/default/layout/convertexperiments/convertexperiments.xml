@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * This is the layout xml file for ConvertExperiments ConvertExperiments. It creates two
+ * blocks within a text_list block that output the sitewide Convert.com script,
+ * and the page specific REED variables, and custom defined product attribute
+ * variables.
+ *
+ * Author: Robert Henderson, Blue Acorn
+ * Version: 1.0.7
+ */
+
+-->
+<layout version="0.1.0">
+    <default>
+        <reference name="head">
+            <block type="core/text_list" name="convert_experiments" as="convert_experiments" after="-">
+                <block type="convert_experiments/reedScripts" name="convert_experiments_customer_type" as="convert_experiments_customer_type" template="convertexperiments/convertexperiments/reedVariables.phtml"/>
+                <block type="core/template" name="convert_experiments_sidewide" as="convert_experiments_sidewide" template="convertexperiments/convertexperiments/sitewideJs.phtml"/>
+            </block>
+        </reference>
+    </default>
+</layout>

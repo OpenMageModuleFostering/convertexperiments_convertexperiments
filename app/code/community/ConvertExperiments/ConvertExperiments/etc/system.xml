@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <convert_experiments translate="label" module="convert_experiments">
+            <class>convert-experiments</class>
+            <label>Convert Experiments</label>
+            <tab>general</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>2000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <settings translate="label">
+                    <label>General Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <expanded>1</expanded>
+                    <fields>
+                        <signup translate="label">
+                            <label>Login or Signup</label>
+                            <frontend_model>convert_experiments/system_config_loginlink</frontend_model>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </signup>
+                        <enabled translate="label">
+                            <backend_model>convert_experiments/enabledcheck</backend_model>
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enabled>
+                        <convert_experiments_project_code translate="label">
+                            <label>Convert.com Project Code</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>20</sort_order>
+                            <comment><![CDATA[Your Project Code is located on the Project Settings page in your <a href="https://www.convertexperiments.com/login" target="_blank">Convert Experiments Account</a>.]]></comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </convert_experiments_project_code>
+                    </fields>
+                </settings>
+                <product_settings translate="label">
+                    <label>Product Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <expanded>1</expanded>
+                    <fields>
+                        <explanation translate="label">
+                            <label>What are Product Settings?</label>
+                            <frontend_model>convert_experiments/system_config_explanation</frontend_model>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </explanation>
+                        <convert_experiments_custom_text_one translate="label">
+                            <label>Custom Text Attribute</label>
+                            <!--<backend_model>convert_experiments/disallowDuplicates</backend_model>-->
+                            <source_model>convert_experiments/entity_attribute</source_model>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>10</sort_order>
+                            <comment>Attributes are pulled from Magento Catalog Attributes.</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </convert_experiments_custom_text_one>
+                        <convert_experiments_custom_text_two translate="label">
+                            <label>Custom Text Attribute</label>
+                            <!--<backend_model>convert_experiments/disallowDuplicates</backend_model>-->
+                            <source_model>convert_experiments/entity_attribute</source_model>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>20</sort_order>
+                            <comment>Please do not select the same attribute twice.</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </convert_experiments_custom_text_two>
+                        <convert_experiments_custom_number_one translate="label">
+                            <label>Custom Number Attribute</label>
+                            <!--<backend_model>convert_experiments/disallowDuplicates</backend_model>-->
+                            <source_model>convert_experiments/entity_attribute_integer</source_model>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>30</sort_order>
+                            <comment>This attribute will always have an integer value.</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </convert_experiments_custom_number_one>
+                        <convert_experiments_custom_number_two translate="label">
+                            <label>Custom Number Attribute</label>
+                            <!--<backend_model>convert_experiments/disallowDuplicates</backend_model>-->
+                            <source_model>convert_experiments/entity_attribute_integer</source_model>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>40</sort_order>
+                            <comment>This attribute will always have an integer value. Please do not select the same attribute twice.</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </convert_experiments_custom_number_two>
+                    </fields>
+                </product_settings>
+            </groups>
+        </convert_experiments>
+    </sections>
+</config>

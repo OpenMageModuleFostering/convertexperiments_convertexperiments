@@ -1,0 +1,40 @@
+/**
+ * ConvertExperiments ConvertExperiments Magento Module
+ *
+ * @package ConvertExperiments
+ * @subpackage ConvertExperiments
+ * @version 1.0.7
+ * @author Robert Henderson
+ */
+
+ ConvertExperiments ConvertExperiments allows for an easy way to add necessary Convert.com
+ Javascript scripts and variables to pages of your Magento web store.
+
+ System Configuration:
+ The System Config is store scope specific so that you can enable the module on
+ one store of a multi-store Magento setup.
+
+ All that needs to be configured are your unique account identifier which will
+ look something like 1001234_1001234, and your custom product attributes. The
+ first two attributes are text attributes only,and the last two attributes are
+ numeric attributes only. The value of the attribute will be cut off at 50
+ characters.
+
+ If the module is disabled, nothing will output on the frontend of your website.
+
+ The Sitewide Header Javascript is placed directly below the opening <body> tag,
+ and before the Google Analytics script. The custom defined REED Javascript
+ variables are placed above the sitewide Javascript code, and are encapsulated
+ in the same script tag. Custom attribute variables defined in the system config
+ will only appear on product pages that have a value defined for that attribute.
+
+ If an admin user selects two of the same attribute, the configuration will not
+ be saved, and an error will be thrown telling the user to select unique
+ attributes for each custom value. All four attributes are not required, but it
+ is required to select unique attributes for each custom variable.
+
+ If you use the Age (days) custom number attribute, a value will appear inside
+ that variable on product pages that have the 'news_from_date' field defined on
+ the product level for that store. The module takes the current date and
+ subtracts the value given in 'news_from_date' to come up with an integer value.
+ This is represented in the number of days the product has been new for.

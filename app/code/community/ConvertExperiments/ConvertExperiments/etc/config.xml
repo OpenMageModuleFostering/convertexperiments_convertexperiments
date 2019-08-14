@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<!-- Root node for Magento configuration files -->
+<config>
+  <!-- modules node provides basic information about the module -->
+  <modules>
+  <!-- This node's name has to be the same as module's full name
+  including namespace -->
+    <ConvertExperiments_ConvertExperiments>
+      <!-- Current version of module -->
+      <version>1.0.0</version>
+    </ConvertExperiments_ConvertExperiments>
+  </modules>
+  <global>
+    <blocks>
+      <convert_experiments>
+        <class>ConvertExperiments_ConvertExperiments_Block</class>
+      </convert_experiments>
+    </blocks>
+    <helpers>
+      <convert_experiments>
+        <class>ConvertExperiments_ConvertExperiments_Helper</class>
+      </convert_experiments>
+    </helpers>
+    <models>
+      <convert_experiments>
+        <class>ConvertExperiments_ConvertExperiments_Model</class>
+      </convert_experiments>
+    </models>
+    </global>
+    <frontend>
+      <layout>
+        <updates>
+          <convert_experiments module="ConvertExperiments_ConvertExperiments">
+            <file>convertexperiments/convertexperiments.xml</file>
+          </convert_experiments>
+        </updates>
+      </layout>
+    </frontend>
+    <default>
+      <convert_experiments>
+        <settings>
+          <enabled>0</enabled>
+          <convert_experiments_sitewide_script>Enter Javascript provided to you in your account Convert.com here.</convert_experiments_sitewide_script>
+        </settings>
+      </convert_experiments>
+    </default>
+</config>

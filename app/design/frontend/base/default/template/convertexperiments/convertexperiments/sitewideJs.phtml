@@ -1,0 +1,14 @@
+<?php
+/**
+ * Displays the necessary Sitewide Convert.com Experiments script after body start
+ *
+ * @package ConvertExperiments
+ * @subpackage ConvertExperiments
+ * @version 1.0.5
+ * @author Robert Henderson
+ */
+?>
+<?php $helper = Mage::helper('convert_experiments/data') ?>
+<?php if($helper->isEnabled() == 1): ?>
+<?php echo $helper->getConvertProjectCode() ?>
+<?php endif; ?>
