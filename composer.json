@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/ConvertExperiments_ConvertExperiments",
+    "name": "OpenMageModuleFostering\/ConvertExperiments_ConvertExperiments",
     "type": "magento-module",
     "license": "Massachusetts-Institute-of-Technology-License-(MITL)",
     "homepage": "",
     "description": "Convert Experiments is an integration module that outputs necessary frontend JavaScript variables (automatic and user selected) based on Magento attributes. These variables are used in the user's Convert.com account to set up conversion testing.",
     "authors": [
-    {
-        "name": "Convert Experiments",
-        "email": "dennis@convert.com"
-    }
-],
+        {
+            "name": "Convert Experiments",
+            "email": "dennis@convert.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
